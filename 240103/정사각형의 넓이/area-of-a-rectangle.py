@@ -1,4 +1,9 @@
 n = int(input())
 
 wid = n*n
-print(wid)
+
+if n < 5:
+    print(n)
+    print("tiny")
+else:
+    print(wid)
