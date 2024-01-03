@@ -5,5 +5,6 @@ if a%2==1:
     if a %3==0:
         a = a//3
 else: 
-    a= a//3
+    if a %3==0:
+        a= a//3
 print(a)
