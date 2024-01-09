@@ -1,11 +1,26 @@
-a,b,c = input().split()
+a,b,c = map(int,input().split())
 
-if a > b and b > c:
-    print(b)
-elif a>b and c>b:
+if a>b:
+    if b>c:
+        print(b)
+    elif c>b:
+        if c>a:
+            print(a)
+        else:
+            print(c)
+elif b>a:
     if a>c:
-        print(c)
-    else:
         print(a)
-else:
-    print(b)
+    elif c>a:
+        if c>b:
+            print(b)
+        else:
+            print(c)
+elif c>b:
+    if b>a:
+        print(b)
+    elif a>b:
+        if c>a:
+            print(a)
+        else:
+            print(c)
