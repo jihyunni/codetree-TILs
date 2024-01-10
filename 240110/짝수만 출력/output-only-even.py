@@ -1,6 +1,6 @@
 a,b = map(int,input().split())
 
-i = 1
+i = 10
 
 while i <=b:
     if i%2==0:
